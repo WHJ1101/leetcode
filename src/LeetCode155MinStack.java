@@ -38,6 +38,7 @@ public class LeetCode155MinStack {
         text.push(0);
         text.push(-3);
         text.push(88);
+        text.push(88);
         System.out.println(text.getMin());
         System.out.println(text.getMin());
         System.out.println(text.top());
