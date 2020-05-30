@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/LeetCode.iml" filepath="$PROJECT_DIR$/LeetCode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SimpleDB2020/sp20-moocbase/src/main/main.iml" filepath="$PROJECT_DIR$/../SimpleDB2020/sp20-moocbase/src/main/main.iml" />
     </modules>
   </component>
 </project>
