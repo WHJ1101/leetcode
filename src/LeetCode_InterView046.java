@@ -38,6 +38,8 @@ public class LeetCode_InterView046 {
         if(num == 0){
             return 1;
         }
+        String s =String.valueOf(num);
+        System.out.println(s);
         int ans = 0;
         int cnt = 0;//先算出num的位数；
         int temp = num;
