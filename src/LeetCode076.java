@@ -2,7 +2,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-class Solution {
+class LeetCode076 {
     Map<Character, Integer> ori = new HashMap<Character, Integer>();
     Map<Character, Integer> cnt = new HashMap<Character, Integer>();
 
