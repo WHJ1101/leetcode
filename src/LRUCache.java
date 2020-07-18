@@ -19,7 +19,7 @@ public class LRUCache {
     * 哈希表中键就是缓存键值对中的键；而值指向该键值对节点；
     * 双向链表按照使用的顺序来维护所有在缓存中的键值对；
     * */
-    private Map<Integer,DlinkedNode>cache = new HashMap<Integer, DlinkedNode>();
+    private Map<Integer,DlinkedNode>cache ;
     private int size;
     private int capacity;
     private DlinkedNode head,tail;
@@ -29,6 +29,7 @@ public class LRUCache {
     public LRUCache(int capacity) {
         this.size = 0;
         this.capacity = capacity;
+        cache = new HashMap<>(capacity);
 
         /*
         * 使用伪头、尾节点,避免一些边界判断（头尾哨兵节点）
