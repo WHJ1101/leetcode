@@ -3,20 +3,23 @@ import java.util.Set;
 
 public class LeetCode003 {
     public  int lengthOfLongestSubstring(String s){
-        Set<Character> occ = new HashSet<>();
-        int n = s.length();
-        int rk = 0, ans = 0;
-        for(int i = 0; i < n; ++i){
+        HashSet<Character> set = new HashSet<>();
+        int ans = 0;
+        int right = -1;
+        for(int i = 0; i < s.length(); ++i){
             if(i != 0){
-                occ.remove(s.charAt(i-1));
+                set.remove(s.charAt(i));
             }
-            while(rk < n && !occ.contains(s.charAt(rk ))){
-                occ.add(s.charAt(rk ));
-                rk++;
+
+            while(right + 1 < s.length() && !set.contains(s.charAt(right + 1))){
+                set.add(s.charAt(right + 1));
+                right++;
             }
-            ans = Math.max(ans,rk - i );
+
+            ans = Math.max(ans, right - i + 1);
+
         }
-        return  ans;
+        return ans;
     }
 
     public static void main(String[] args) {
