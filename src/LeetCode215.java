@@ -4,6 +4,7 @@ public class LeetCode215 {
     Random random = new Random();
 
     public int findKthLargest(int[] nums, int k) {
+
         return quickSelect(nums, 0, nums.length - 1, nums.length - k);
     }
 
@@ -31,7 +32,7 @@ public class LeetCode215 {
     }
     /*
     以末尾元素为基准数，将所有小于它的置换到左侧（从索引0开始依次插入）
-    然后把末尾元素与最后一个比它小的元素的前一位交换位置
+    然后把末尾元素与最后一个比它小的元素的后一位交换位置
     （这就是该元素再排序队列内的最终正确位置）
     返回最终索引
      */
